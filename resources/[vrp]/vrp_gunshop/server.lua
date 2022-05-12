@@ -11,19 +11,19 @@ Proxy.addInterface("vrp_gunshop", vRPnui)
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
 
-exports['ghmattimysql']:QueryAsync([[
-    CREATE TABLE IF NOT EXISTS vrp_gunshop(
-        id int(11) NOT NULL AUTO_INCREMENT,
-        id_dono int(11) DEFAULT NULL,
-        nome VARCHAR(255) DEFAULT NULL,
-        preco INTEGER DEFAULT NULL,
-        a_venda BOOLEAN DEFAULT NULL,
-        estoque TEXT,
-        cofre INTEGER,
-        cofreLimite INTEGER,
-        CONSTRAINT pk_gunshop PRIMARY KEY(id)
-    )
-]])
+-- exports['ghmattimysql']:QueryAsync([[
+--     CREATE TABLE IF NOT EXISTS vrp_gunshop(
+--         id int(11) NOT NULL AUTO_INCREMENT,
+--         id_dono int(11) DEFAULT NULL,
+--         nome VARCHAR(255) DEFAULT NULL,
+--         preco INTEGER DEFAULT NULL,
+--         a_venda BOOLEAN DEFAULT NULL,
+--         estoque TEXT,
+--         cofre INTEGER,
+--         cofreLimite INTEGER,
+--         CONSTRAINT pk_gunshop PRIMARY KEY(id)
+--     )
+-- ]])
 
 vRP._prepare("NL/inserir_gunshops",
              "INSERT INTO vrp_gunshop(id_dono, nome, preco, a_venda, estoque, cofre, cofreLimite) VALUES(@id_dono, @nome, @preco, @a_venda, @estoque, @cofre, @cofreLimite)")

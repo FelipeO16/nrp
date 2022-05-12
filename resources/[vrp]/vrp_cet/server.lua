@@ -11,18 +11,18 @@ Tunnel.bindInterface("vrp_cet", vRPct)
 Proxy.addInterface("vrp_cet", vRPct)
 
 -- vRP
-exports['ghmattimysql']:QueryAsync([[
-    CREATE TABLE IF NOT EXISTS vrp_cet(
-        id INTEGER AUTO_INCREMENT,
-        dono INTEGER,
-        dono_nome VARCHAR(255),
-        modelo VARCHAR(255),
-        placa VARCHAR(20),
-        valor INTEGER,
-        slot INTEGER,
-        CONSTRAINT pk_cet PRIMARY KEY(id)
-    )
-]])
+-- exports['ghmattimysql']:QueryAsync([[
+--     CREATE TABLE IF NOT EXISTS vrp_cet(
+--         id INTEGER AUTO_INCREMENT,
+--         dono INTEGER,
+--         dono_nome VARCHAR(255),
+--         modelo VARCHAR(255),
+--         placa VARCHAR(20),
+--         valor INTEGER,
+--         slot INTEGER,
+--         CONSTRAINT pk_cet PRIMARY KEY(id)
+--     )
+-- ]])
 
 vRP._prepare("NL/inserir_apreensao",
              "INSERT INTO vrp_cet(dono, dono_nome, modelo, placa, valor, slot) VALUES(@dono, @dono_nome, @modelo, @placa, @valor, @slot)")

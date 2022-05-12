@@ -10,19 +10,19 @@ Tunnel.bindInterface("nl_usados", vRPvd)
 Proxy.addInterface("nl_usados", vRPvd)
 
 -- vRP
-exports['ghmattimysql']:QueryAsync([[
-    CREATE TABLE IF NOT EXISTS nl_usados(
-        id INTEGER AUTO_INCREMENT,
-        dono INTEGER,
-        dono_nome VARCHAR(255),
-        telefone VARCHAR(20),
-        modelo VARCHAR(255),
-        placa VARCHAR(20),
-        preco INTEGER,
-        slot INTEGER,
-        CONSTRAINT pk_vendas PRIMARY KEY(id)
-    )
-]])
+-- exports['ghmattimysql']:QueryAsync([[
+--     CREATE TABLE IF NOT EXISTS nl_usados(
+--         id INTEGER AUTO_INCREMENT,
+--         dono INTEGER,
+--         dono_nome VARCHAR(255),
+--         telefone VARCHAR(20),
+--         modelo VARCHAR(255),
+--         placa VARCHAR(20),
+--         preco INTEGER,
+--         slot INTEGER,
+--         CONSTRAINT pk_vendas PRIMARY KEY(id)
+--     )
+-- ]])
 
 vRP._prepare("NL/inserir_venda",
              "INSERT INTO nl_usados(dono, dono_nome, telefone, modelo, placa, preco, slot) VALUES(@dono, @dono_nome, @telefone, @modelo, @placa, @preco, @slot)")

@@ -8,19 +8,19 @@ vRPclient = Tunnel.getInterface("vRP")
 Tunnel.bindInterface("vrp_mercado", vRPmc)
 Proxy.addInterface("vrp_mercado", vRPmc)
 
-exports['ghmattimysql']:QueryAsync([[
-    CREATE TABLE IF NOT EXISTS vrp_mercado(
-      id int(11) NOT NULL AUTO_INCREMENT,
-      id_dono int(11) DEFAULT NULL,
-      nome VARCHAR(255) DEFAULT NULL,
-      preco INTEGER DEFAULT NULL,
-      a_venda BOOLEAN DEFAULT NULL,
-      estoque TEXT,
-      cofre INTEGER,
-      cofreLimite INTEGER,
-      CONSTRAINT pk_mercado PRIMARY KEY(id)
-    )
-]])
+-- exports['ghmattimysql']:QueryAsync([[
+--     CREATE TABLE IF NOT EXISTS vrp_mercado(
+--       id int(11) NOT NULL AUTO_INCREMENT,
+--       id_dono int(11) DEFAULT NULL,
+--       nome VARCHAR(255) DEFAULT NULL,
+--       preco INTEGER DEFAULT NULL,
+--       a_venda BOOLEAN DEFAULT NULL,
+--       estoque TEXT,
+--       cofre INTEGER,
+--       cofreLimite INTEGER,
+--       CONSTRAINT pk_mercado PRIMARY KEY(id)
+--     )
+-- ]])
 
 vRP._prepare("NL/inserir_mercados",
              "INSERT INTO vrp_mercado(id_dono, nome, preco, a_venda, estoque, cofre, cofreLimite) VALUES(@id_dono, @nome, @preco, @a_venda, @estoque, @cofre, @cofreLimite)")
