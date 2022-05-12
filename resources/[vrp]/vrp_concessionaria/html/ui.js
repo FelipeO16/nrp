@@ -20,12 +20,12 @@ function CloseConce() {
 }
 
 $(document).ready(function() {
-	
-	$(document).keyup(function(e) {
-		if (e.key === "Escape") {
-			CloseConce()
-		}
-	});
+
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") {
+            CloseConce()
+        }
+    });
 
     $(function() {
         $("#txtBusca").keyup(function() {
@@ -82,7 +82,7 @@ $(document).ready(function() {
 
     $('.category_carro').click(function() {
         let pegCarro = $(this).attr('category');
-		console.log(pegCarro);
+        console.log(pegCarro);
 
         function hideCarro() {
             $('.carro-item').hide();
