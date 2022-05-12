@@ -2,10 +2,11 @@ local cfg = {}
 
 -- mysql credentials
 cfg.db = {
-    host = "127.0.0.1", -- database ip (default is local)
-    database = "nolife", -- name of database
-    user = "root", --  database username
-    password = "" -- password of your database
+    driver = "ghmattimysql",
+    host = "localhost",
+    database = "nolife",
+    user = "root",
+    password = ""
 }
 
 cfg.save_interval = 30 -- segundo
