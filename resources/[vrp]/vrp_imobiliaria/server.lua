@@ -8,7 +8,7 @@ vRPclient = Tunnel.getInterface("vRP")
 Tunnel.bindInterface("vrp_imobiliaria",vRPjb)
 Proxy.addInterface("vrp_imobiliaria",vRPjb)
 
-exports['GHMattiMySQL']:QueryAsync([[
+exports['ghmattimysql']:QueryAsync([[
     CREATE TABLE IF NOT EXISTS vrp_imobiliaria(
         id int(11) NOT NULL AUTO_INCREMENT,
         nome VARCHAR(255) DEFAULT NULL,

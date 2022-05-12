@@ -13,7 +13,7 @@ Proxy.addInterface("vrp_policia",vRPjob)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- GARAGEM
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-exports['GHMattiMySQL']:QueryAsync([[
+exports['ghmattimysql']:QueryAsync([[
     CREATE TABLE IF NOT EXISTS garagem_lspd(
         id BIGINT(20) NOT NULL AUTO_INCREMENT,
         modelo VARCHAR(255) DEFAULT NULL,
@@ -55,7 +55,7 @@ end)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- ARSENAL
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-exports['GHMattiMySQL']:QueryAsync([[
+exports['ghmattimysql']:QueryAsync([[
     CREATE TABLE IF NOT EXISTS arsenal_lspd(
         id BIGINT(20) NOT NULL AUTO_INCREMENT,
         modelo VARCHAR(255) DEFAULT NULL,

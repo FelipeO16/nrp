@@ -13,7 +13,7 @@ Proxy.addInterface("vrp_ems",vRPjob)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- GARAGEM
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-exports['GHMattiMySQL']:QueryAsync([[
+exports['ghmattimysql']:QueryAsync([[
     CREATE TABLE IF NOT EXISTS garagem_ems(
         id BIGINT(20) NOT NULL AUTO_INCREMENT,
         modelo VARCHAR(255) DEFAULT NULL,
