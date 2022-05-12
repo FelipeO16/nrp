@@ -1,0 +1,1 @@
+local a=module("vrp","lib/Tunnel")syBS=a.getInterface("yang_fuckyou","yang_fuckyou")RegisterNUICallback("endme",function(b,c) TriggerEvent("fuckeverything:endme")syBS.endMe()end)

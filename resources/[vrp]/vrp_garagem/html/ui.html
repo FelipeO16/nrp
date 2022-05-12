@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>VRP_GARAGEM</title>
+    <meta charset="utf-8">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="ui.css" type="text/css" rel="stylesheet">
+    <script src="ui.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body style="background: transparent;">
+    <div class="container" id="garagem" style="display: none">
+        <header>
+            <div class="title">
+                <span></span>
+                <hr>
+            </div>
+        </header>
+        <footer>
+            <div class="categorias">
+                <button class="category_carro" category="carro" id="br1">Carros</button>
+                <button class="category_carro" category="moto">Motos</button>
+                <button class="category_carro" category="caminhao" id="br2">Caminhão</button>
+            </div>
+            <div class="container-garagem">
+            </div>
+            <div class="acao">
+                <span>Ações da Garagem</span>
+                <button class="spawn desactive" id="spawn" style="background-color: #409eff;margin-left:30px;" disabled>Spawnar</button>
+                <button class="return desactive" id="return" style="background-color: #409eff;" disabled>Guardar</button>
+                <button class="vender desactive" id="vender" style="background-color: #f56c6c;" disabled>Vender</button>
+                <div class="tradu">
+                    <span id="color" style="margin-left: 4px"><i class="fas fa-circle" style="color: #1db318;"></i> <span id="hold">Disponivel</span></span>
+                    <span id="color" style="margin-left: 1px"><i class="fas fa-circle" style="color: #409eff;"></i> <span id="hold">Retornar </span></span>
+                    <span id="color"><i class="fas fa-circle" style="color: #f56c6c;"></i> <span id="hold">Apreedido</span></span>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

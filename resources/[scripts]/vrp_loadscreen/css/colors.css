@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Color for single progressbar. */
+#pb0::-webkit-progress-value
+{
+    background: rgb(233, 198, 70);
+}
+
+/* Color for multiple progressbars, #1 */
+#pb1::-webkit-progress-value
+{
+    background-color: rgb(255, 102, 102);
+}
+
+/* Color for multiple progressbars, #2 */
+#pb2::-webkit-progress-value
+{
+    background-color: rgb(102, 194, 255);
+}
+
+/* Color for multiple progressbars, #3 */
+#pb3::-webkit-progress-value
+{
+    background-color: rgb(133, 224, 133);
+}
+
+/* Color for multiple progressbars, #4 */
+#pb4::-webkit-progress-value
+{
+    background-color: rgb(102, 102, 255);
+}
+
+/* Color for multiple progressbars, #5 */
+#pb5::-webkit-progress-value
+{
+    background-color: rgb(255, 239, 177);
+}
+
+
+
+body.madoko {
+    margin: 0pt;
+    padding: 0pt;
+    max-width: 100%;      
+  }
+  .madoko .reveal h1 {
+      font-size: 3.7em;
+  }
+  .madoko .reveal h2 {
+      font-size: 2.1em;
+  }
+  .reveal .authorblock .author {
+      font-size: 120%;
+      margin-bottom: 1ex;
+  }        
+  .reveal table {
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .reveal pre table {
+    margin-left: 0pt;
+  }
+  .madoko .reveal pre.pretty {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+  }
+  .reveal li p {
+      text-align: left;
+  }
+  .reveal h2 {
+      margin-bottom: 0.7em;
+  }
+  .reveal section ul,
+  .reveal section ol {
+      margin-top: 0.35em;
+      margin-bottom: 0.35em;
+  }
+  .reveal section img.math-display {
+      padding: 1em;
+      box-shadow: none;
+      border: none;
+  }
+  .reveal section img.math-inline {
+      margin: 0pt;
+      padding: 0pt;
+      background-color: none;
+      box-shadow: none;
+      border: none;
+  }
+  .reveal section img {
+      box-shadow: none;
+      border: none;
+  }
+  .madoko .reveal pre {
+      border: 1px solid black;
+      word-wrap: normal;
+      background-color: white;
+      font-size: 0.7em;
+      padding: 0.7em;
+      line-height: 100%;
+      width: 100%;
+  }      
+  .reveal pre code, .reveal code {
+      padding: 0pt;
+  }
+  .reveal nav.toc {
+      line-height: 1em;
+      font-size: 60%;
+      overflow-y: auto;
+  }    
+  .reveal .tocitem {
+      text-align: left;
+  }
+  .reveal .toc>.tocblock .tocblock {
+      margin-left: 0.5em;
+  }   
+  .reveal .toc>.tocblock .tocblock .tocblock {
+      margin-left: 1em;
+  }
+  .reveal .bibliography {
+    height: 18em;
+    overflow-y: auto;
+    font-size: 0.8em;
+    line-height: 1.25;
+  }
+  .reveal section[data-smaller=""],
+  .reveal section[data-smaller="true"] {
+    font-size: 80%;
+    width: 110%;
+  }
+  .reveal .slides>section[data-smaller=""],
+  .reveal .slides>section[data-smaller="true"] {
+    left: -55%;
+  }
+  .reveal .details {
+    display: none;
+  }
+  .reveal[data-details=""] .details,
+  .reveal[data-details="true"] .details {
+    display: initial;
+  }
+  /* Display in the preview window */
+  html, body.madoko.preview, body.madoko.preview-full, .body.madoko {
+    height  : 100% !important;
+    width   : auto!important;
+    padding : 0pt !important;
+    margin  : 0pt !important;
+  }
+  body.madoko.preview, body.madoko.preview-full, .preview .body.madoko {
+    overflow: hidden !important;
+  }
+  body.preview .reveal .slides .fragment {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  body.preview .reveal .slides .fragment.visible {
+    opacity: 1.0;
+  }
+  .preview .reveal div.notes,
+  .preview .reveal aside.notes {
+    display  : block;
+    position : absolute;
+    width    : 30%;
+    left     : 70%;
+    top      : -15%;
+    font-size: 50%;
+    border   : 1px solid black;
+    border-radius   : 10px;
+    background-color: white;
+  }
+  /* 'static' display in the preview window, unused for now */
+  body.preview.static div.reveal, 
+  body.preview.static div.ticreveal .slides, 
+  body.preview.static div.reveal section {
+    display: block !important;
+    position: relative !important;
+    width: auto !important;      
+  }
+  body.preview.static div.reveal section {
+    border: solid 1px black;
+    padding: 1em !important;
+    margin-top: 1em;
+    min-height: 15em;
+    top: 0pt;
+  }
+  body.madoko.preview.static section {
+    font-size: 75%;
+  }
+  body.madoko.preview.static {
+    padding: 0em 1em !important;
+  }
+  body.madoko.preview.static .reveal pre {
+    width: 95%;
+  }    
+  body.preview .reveal[data-details="false"] .details {
+    display: initial;
+    color: gray;
+  }
+  body.preview .reveal[data-long="false"] section[data-long] {
+    border-left: 2px black solid;
+  }
+
+
+  

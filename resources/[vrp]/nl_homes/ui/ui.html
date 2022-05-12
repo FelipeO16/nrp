@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>NL_HOMES</title>
+    <link rel="stylesheet" href="ui.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: transparent;">
+
+    <div class="homeClothe" style="display: none;">
+        <div class="clotheLeft">
+            <div class="itemLeft" id="saveClothe">
+                <i class="far fa-save"></i>
+            </div>
+            <div class="itemLeft" id="trashClothe">
+                <i class="far fa-trash-alt"></i>
+            </div>
+            <div class="itemLeft" id="useClothe">
+                <i class="fas fa-user-tie"></i>
+            </div>
+        </div>
+        <div class="clotheRight">
+            <div class="createsClothe">
+                <div class="createsTitle">
+                    <div class="line"></div>
+                    <p>Roupas Salvas</p>
+                    <div class="line"></div>
+                </div>
+                <div class="containerClothe">
+
+                </div>
+                <a>Use as setinhas para descer!</a>
+            </div>
+
+            <div class="sectionClothe saveClothes" style="display: none;">
+                <div class="titleClothe" id="returnHome">
+                    <i class="fas fa-angle-left"></i>
+                    <a>Retornar</a>
+                </div>
+                <div class="formClothe">
+                    <form id="formSave">
+                        <div class="formInfo">
+                            <label>Nome do Set</label>
+                            <input id="inputSave" placeholder="Ex: Roupa de Sair"><br>
+                            <button id="formClothe">Salvar</button>
+                        </div>
+                        <p>Ao salvar a roupa tudo que você está vestindo será salvo!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="ui.js" type="text/javascript"></script>
+
+</body>
+
+</html>

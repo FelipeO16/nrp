@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>VRP_LSPD</title>
+    <meta charset="utf-8">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="ui.css" type="text/css" rel="stylesheet">
+    <script src="ui.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body style="background: transparent;">
+    <div class="container" style="display: none">
+        <div class="filtros">
+            <center>
+                <div class="opt category_carro" category="carro"><i class="fas fa-car"></i></div>
+                <div class="opt category_carro" category="moto" style="border-top: 2px solid #e0dcdc"><i class="fas fa-motorcycle"></i></div>
+            </center>
+        </div>
+        <header>
+            <center>
+                <img class="category_carro" category="all" src="https://pngimage.net/wp-content/uploads/2018/05/ems-logo-png-8.png">
+            </center>
+        </header>
+        <footer></footer>
+    </div>
+    <div class="container2" style="display: none">
+        <center>
+            <img id="img2" class="category_arma" category="all" src="https://pngimage.net/wp-content/uploads/2018/05/ems-logo-png-8.png">
+
+            <div class="ArsenalCategoria">
+                <button class="category_arma" category="pistola">Pistola</button>
+                <button class="category_arma" category="smg">SMG</button>
+                <button class="category_arma" category="rifle">Rifle</button>
+                <button class="category_arma" category="sniper">Sniper</button>
+            </div>
+        </center>
+        <div class="ArsenalItens"></div>
+    </div>
+</body>
+</html>

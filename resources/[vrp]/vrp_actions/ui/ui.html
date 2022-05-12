@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>VRP_AGENCIA</title>
+	<link rel="stylesheet" href="ui.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+	
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ed892dfa27.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/4d1e0062bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: transparent">
+    <div class="container-config" style="display: none;">
+        <h1>Menu nolife roleplay</h1>
+        <p>Modo cine <span style="float: right;">Opções</span></p>
+        <p id="text">Essas configurações são ligadas a interface do usuario, clique no seletor a direita para ativar/desativar as opções.</p>
+        <div class="options">
+            <p>Habilitar Tudo</p>
+            <label class="switch">
+                <input id="tudo" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="options">
+            <p>Modo Cine</p>
+            <label class="switch">
+                <input id="cine" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="options">
+            <p>Ocultar hud</p>
+            <label class="switch" class="checked">
+                <input id="hud" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="container-dialog" style="display: none;">
+        <header>
+            <button id="accept"><i class="fas fa-comments"></i> Missões <i class="fas fa-exclamation"></i></button>
+            <button id="cancel"><i class="fas fa-sign-out-alt"></i> Sair</button>
+        </header>
+        <footer>
+            <h1></h1>
+            <p></p>
+        </footer>
+    </div>
+
+    <div class="container-menucar" style="display: none;">
+        <ul class="menu menu-car" id="pagina1">
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina1</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina1</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina1</button></li>
+            <li><button class="menuoption" data-action="abrirCapo"><span class="emoji"><i class="fas fa-align-left"></i></span>Abrir capô</button></li>
+            <li><button class="menuoption" data-action="print"><span class="emoji"><i class="fas fa-align-left"></i></span>Printar</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina1</button></li>
+            <li><button class="menuoption" id="a2"><span class="emoji"><i class="fas fa-align-left"></i></span>Reviver</button></li>
+            <li><button class="menuoption" data-sub="pagina2"><span class="emoji"><i class="fas fa-angle-right"></i></span>Proximo</button></li>
+        </ul>
+
+        <ul class="menu menu-car" data-parent="pagina1" id="pagina2" style="display: none;">
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina2</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina2</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina2</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span><span class="text">Abrir capô</span></button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina2</button></li>
+            <li><button class="menuoption" data-sub="pagina3"><span class="emoji"><i class="fas fa-angle-right"></i></span>Proximo</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina2</button></li>
+        </ul>
+
+        <ul class="menu menu-car" data-parent="pagina2" id="pagina3" style="display: none;">
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span><span class="text">Abrir capô</span></button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+            <li><button class="menuoption"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+            <li><button class="menuoption" data-sub="pagina2"><span class="emoji"><i class="fas fa-align-left"></i></span>Pagina3</button></li>
+        </ul>
+    </div>
+
+
+    <script src="ui.js" type="text/javascript"></script>
+	<script src="blooming-menu.min.js" type="text/javascript"></script>
+</body>
+
+</html>

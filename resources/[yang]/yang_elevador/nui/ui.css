@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	font-family: "Calibri";
+}
+
+div {
+	border: 0; 
+	outline: 0; 
+	vertical-align: baseline; 
+	background: transparent; 
+	margin: 0; 
+	padding: 0;
+}
+:focus { 
+	outline: 0;
+}
+::selection { 
+	background: transparent;
+}
+
+#mainmenu {
+	top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: none;
+	width: 220px;
+    max-height: 300px;
+	height: auto;
+    position: fixed;
+	border: double 2px transparent;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.4);
+    padding: 20px 15px;
+}
+
+#topmenu, #bottommenu {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#bottommenu {
+	margin-top: 8px;
+}
+
+.dot, .dot2 {
+	background-color: #777;
+	display: inline-flex;
+	margin: 5px 5px;
+	border: solid 3px black;
+	position: relative;
+	color: white;
+}
+
+.dot {
+  height: 30px;
+  width: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 15px;
+}
+
+.dot2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+#mainmenu span{
+	display: block;
+	position: relative;
+	width: 100%;
+
+}
+
+.dot:hover, .dot2:hover {
+	color: black;
+	background: gray;
+}
+
+#title {
+	color: black;
+    width: 100%;
+    height: 30px;
+    background-color: #777;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+	border: double 2px black;
+	border-radius: 20px;
+	font-size: 20px;
+}

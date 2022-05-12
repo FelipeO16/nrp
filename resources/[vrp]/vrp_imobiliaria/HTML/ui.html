@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>NL_IMOBILIARIA</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Karla'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body style="background: transparent;">
+    <div class="tudo" style="display: none;">
+
+
+        <div class="content container-fluid ddd" id="home">
+            <div class="url-acao">
+                <a><i class="fas fa-home"></i></a>
+                <div class="url-link"><span id="url-link">www.dynasty8realestate.com</span></div>
+                <a id="close"><i class="fas fa-times"></i></a>
+            </div>
+            <header>
+                <div class="imagem">
+                    <img src="https://i.imgur.com/HLFsa8w.png">
+                </div>
+                <div class="titulo">
+                    <p>A melhor mudança da sua vida</p>
+                </div>
+            </header>
+            <div class="box-casas">
+                <div class="box-simples">
+                    <img src="https://cdn.discordapp.com/attachments/423974115653976065/609857137195089922/Screenshot_5.png">
+                    <div class="box-info">
+                        <button><a class="menu-item" href="venda">VER LISTA DE PROPRIEDADES</a></button>
+                    </div>
+                </div>
+                <div class="box-executiva">
+                    <img src="https://cdn.discordapp.com/attachments/423974115653976065/609850752344522852/Screenshot_2.png">
+                    <div class="box-info">
+                        <button><a>VER LISTA DE EMPRESAS</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="info-home">
+                <p>Temos mais opções de imóveis que qualquer outro corretor da cidade. Nesta cidade, sabemos que maior e melhor significam a mesma coisa.</p>
+                <p>Estamos falando de um mercado de compradores; de um mercado de vendedores; do que você quiser que ele seja. No Dynasty 8, seus sonhos são pré-aprovados.</p>
+                <p>Ninguem nunca perdeu dinheiro no mercado imobiliario.</p>
+                <p>Para um toque profissional, pessoal, ou até inadequado, pode parar de procurar; Voê encontrou o Dynasty 8. Não pense em nós como seus corretores, pense em nós como seus amigos. Um amigo puxa-saco que coloca a foto dele em tudo como se
+                    o mundo fosse um álbum colegial e exige uma porcentagem do seu dinheiropara dizer coisas que você já sabe, como "Esse aqui é o banheiro", "O jardim seria ótimo para seus filhos brincarem" ou "Você não vai se adaptar ao bairro. Você
+                    é negro".</p>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="content container-vendas ddd" id="venda">
+            <div class="url-acao">
+                <a class="menu-item" href="home"><i class="fas fa-home"></i></a>
+                <div class="url-link"><span>www.dynasty8realestate.com/propriedades</span></div>
+                <a class="menu-item" id="market" href="anuncio"><i class="fas fa-cart-plus"></i></a>
+                <a id="close"><i class="fas fa-times"></i></a>
+            </div>
+            <header>
+                <div class="imagem">
+                    <img src="https://i.imgur.com/HLFsa8w.png">
+                </div>
+                <div class="titulo-button">
+
+                    <button class="category_carro"
+                    data-desc="Imóveis para comprar ou vender. As melhores opções de casas você encontra na Imobiliária PH CITY."
+                    category="casa" onclick="selectItem(this)">Casas</button>
+
+                    <button class="category_carro"
+                    data-desc="Imóveis para comprar ou vender. As melhores opções de Barracos você encontra na Imobiliária PH CITY."
+                    category="barraco" onclick="selectItem(this)">Barracos</button>
+
+                    <button class="category_carro" 
+                    data-desc="Imóveis para comprar ou vender. As melhores opções de Mansões VIP você encontra na Imobiliária PH CITY."
+                    category="streamer" onclick="selectItem(this)" id="casasStream" style="display: none;">Streamer</button>
+
+                    <button class="category_carro" 
+                    data-desc="Imóveis para comprar ou vender. As melhores opções de Mansões VIP você encontra na Imobiliária PH CITY."
+                    category="casasvip" onclick="selectItem(this)" id="casasVip" style="display: none;">Casas Vip</button>
+                    
+                </div>
+                <div class="titulo">
+                    <p>A melhor mudança da sua vida</p>
+                </div>
+            </header>
+            <div class="titulo-venda">
+                <span><span id="CasasTotal">0</span> Propriedades</span>
+                <span style="float: right">informações</span>
+                <hr>
+            </div>
+            <div class="box-casas">
+                <div class="casas-venda">
+
+                </div>
+                <div class="casas-info">
+                    <div class="card">
+                        <div class="card-header">
+                            <span id="nomecasa">Selecione Alguma</span>
+                            <div class="card-header__right">
+                                <svg class="down" viewBox="0 0 36 36"><path d="M24.88 12.88L18 19.76l-6.88-6.88L9 15l9 9 9-9z"/></svg>
+                                <svg class="arrow" width="48" height="48" viewBox="0 0 48 48"><path d="M24 8l-2.83 2.83L32.34 22H8v4h24.34L21.17 37.17 24 40l16-16z"/></svg>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="card-body">
+                            <span id="desccasa">Casa com paisagem linda pra praia a beira mar, não pode deixar o som ligado depois das 21:00 e é proibido uso de narguila aceitamos cachorros de porte medio como um dogão.</span>
+                            <div class="data">
+                                <ul>
+                                    <li class="title">Acompanhamento</li>
+                                    <li class="title-value"><span id="value">2</span> Baus Disponiveis</li>
+                                    <li class="title-value"><span id="value">1</span> Armario Disponivel</li>
+                                    <li class="title-value"><span id="value">1</span> Cofre Disponivel</li>
+                                </ul>
+                                <button class="visitar">Visitar</button>
+                            </div>
+                        </div>
+                        <img class="logo" src="https://s3.amazonaws.com/gt7sp-prod/decal/88/88/01/5116094678697018888_1.png" width="490" height="300">
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="content anuncio ddd" id="anuncio">
+            <div class="url-acao">
+                <a class="menu-item" href="venda"><i class="fas fa-home"></i></a>
+                <div class="url-link"><span id="url-link">www.dynasty8realestate.com/anuncio</span></div>
+                <a id="close"><i class="fas fa-times"></i></a>
+            </div>
+            <header>
+                <div class="imagem">
+                    <img src="https://i.imgur.com/HLFsa8w.png">
+                </div>
+                <div class="titulo">
+                    <p>A melhor mudança da sua vida</p>
+                </div>
+            </header>
+            <div class="container-anuncio">
+                <div class="titulo-venda">
+                    <span><span id="CasasTotal2">0</span> Propriedades a venda</span>
+                    <span style="float: right">ANUNCIO de residencias</span>
+                    <hr>
+                </div>
+                <div class="norap">
+                    <div class="anuncio-money">
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 80,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 95,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 120,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 150,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 180,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 230,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 260,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 400,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 800,000</strong>
+                        </div>
+                        <div class="money-item">
+                            <strong onclick="selectMoney(this)">r$ 1,000,000</strong>
+                        </div>
+                    </div>
+                    <div class="anuncio-tipo">
+                        <div class="item-casa">
+                            <div class="item-imagem" style="background-image: url(https://vignette.wikia.nocookie.net/es.gta/images/8/81/Tinsel-Towers.jpg/revision/latest?cb=20160124165823);">
+                                <div class="item-titulo"><span style="text-transform: uppercase">APARTAMENTO</span></div>
+                            </div>
+                            <p>Apartamento mobiliado</p>
+                            <p>North Los Santos</p>
+                        </div>
+                        <div class="item-casa">
+                            <div class="item-imagem" style="background-image: url(https://img.gta5-mods.com/q95/images/casa-brasileira-five-m/acfe64-21687105_1407887169325617_8539234826357362314_o.jpg);">
+                                <div class="item-titulo"><span style="text-transform: uppercase">CASA INDIVIDUAL</span></div>
+                            </div>
+                            <p>Casa individual mobiliada</p>
+                            <p>North Los Santos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="anuncio-input">
+                    <input placeholder="Foto: url imagem">
+                    <input placeholder="Nome: Casa Estronda">
+                    <input placeholder="Coordenadas de entrada: x,y,z">
+                    <input placeholder="Coordenadas de saida: x,y,z">
+                    <input placeholder="Coordenadas do Baú: x,y,z">
+                    <input placeholder="Coordenadas do Armario: x,y,z">
+                    <button>Anunciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/ui.js" type="text/javascript"></script>
+    <script>
+        var globalModal = $('.global-modal');
+        $(".btn-green-flat-trigger").on("click", function(e) {
+            e.preventDefault();
+            $(globalModal).toggleClass('global-modal-show');
+        });
+        $(".overlay").on("click", function() {
+            $(globalModal).toggleClass('global-modal-show');
+        });
+
+        $(function() {
+            $(".content").css("display", "none");
+            $(".content#home").show();
+
+            $(".menu-item").on("click", function(e) {
+                e.preventDefault();
+                $(".ddd").hide();
+                var id = $(this).attr("href");
+                $("#" + id + "").show();
+            });
+        });
+
+        function selectItem(element) {
+            let desc = element.dataset.desc
+
+            $('#desccasa').html(desc)
+            $(".titulo-button button").css("background-color", "#fddc69");
+            $(".titulo-button button").css("color", "#16703a");
+            $(element).css("background-color", "#16703a");
+            $(element).css("color", "#fff");
+        }
+
+        function selectMoney(element) {
+            $(".anuncio-money strong").css("background-color", "#fff");
+            $(".anuncio-money strong").css("color", "#00692a");
+            $(element).css("background-color", "#00692a");
+            $(element).css("color", "#fff");
+        }
+
+        $(".card").hover(function() {
+            $(this).toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

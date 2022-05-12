@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>VRP_MERCADO</title>
+    <meta charset="utf-8">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="ui.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body style="background: transparent;">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <div id="wrapper" style="display: none">
+        <center>
+            <div id="info">
+                <p class="i1" style="color: #fff;">Mercadinho do seu Zé</p>
+                <p style="color: #c4c5ca;">Feito pela Equipe No Life Baseling</p>
+            </div>
+        </center>
+        <div id="header">
+            <ul>
+                <li><a onclick="AnuncioChange()">Anunciar</a></li>
+            </ul>
+        </div>
+
+        <div id="sidebar">
+            <h3>Carrinho</h3>
+            <div class="addCartbutton">
+
+            </div>
+            <div id="cart">
+                <span class="empty">Sem produtos no carrinho...</span>
+            </div>
+        </div>
+
+        <div id="grid-selector">
+            <div id="grid-menu">
+                Tipo:
+                <ul>
+                    <li class="largeGrid">
+                        <a></a>
+                    </li>
+                    <li class="smallGrid">
+                        <a class="active"></a>
+                    </li>
+                </ul>
+            </div>
+            <a id="gridA" class="smallGrid" onclick="ReturnMercado()">X</a>
+        </div>
+
+        <div id="grid-anuncio">
+            <center>
+                <div class="container-itens">
+                    <br>
+                </div>
+                <form>
+                    <input id="estoque" type="text" placeholder="Estoque do Produto">
+                    <input id="valor" type="text" placeholder="Preço do Produto">
+                    <input id="foto" type="text" placeholder="Foto do Produto">
+                    <button class="enviar" type="submit">></button>
+                </form>
+            </center>
+        </div>
+        <div id="grid">
+
+        </div>
+        <script src="ui.js" type="text/javascript"></script>
+</body>
+
+</html>

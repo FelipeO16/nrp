@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body
+{
+    overflow: hidden;
+    background-color: rgb(30,30,30);
+    box-shadow: 0 0 500px rgba(0,1,1,1) inset;
+    background-color: rgb(30,30,30);
+    margin: 0;
+}
+
+#message 
+{
+    opacity:1;
+    transition: opacity 0.3s; 
+}
+
+
+#music-info
+{
+    padding:20px;
+}
+
+#player
+{
+    display: none;
+}
+
+#now-playing
+{
+    font-size: 11px;
+    margin: 0;
+
+    padding: 15px;
+}
+
+.icon-button
+{
+    color:white;
+    font-size: 24px;
+    display: inline-block;
+    padding-top: 10px;
+
+}
+
+#volumeSlider
+{
+    padding: 12px;
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    outline: none;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -45px;
+}
+
+#volumeSlider::-webkit-slider-thumb 
+{
+ 
+    width: 100px;
+    height: 100px;
+}
+
+#volumeSlider:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+#log
+{
+    list-style-type: none;
+    font-size: 0.66em;
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position:fixed;
+    right:0;
+    bottom:0;
+}
+
+#log > li
+{
+    color: red;
+}
+
+
+
+.buto{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+.musica{
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    min-width: 150px;
+    max-width: 200px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #fff;
+}
+#play-button{
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+#play-button:hover{
+    background-color: rgba(0,0,0,1);
+}
+#skip-button{
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+#skip-button:hover{
+    background-color: rgba(0,0,0,1);
+}
+p{
+    font-size: 11px;
+    padding: 15px;
+}
+.icon-button {
+    opacity: 0.8;
+}
